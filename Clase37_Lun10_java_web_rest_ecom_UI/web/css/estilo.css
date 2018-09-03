@@ -1,0 +1,31 @@
+*{ /* reseteo margenes para todos los navegadores */
+    margin: 0;
+    padding: 0;
+}
+/* Colores */
+body{
+    background-color: black;
+    color: white;
+}
+section{
+    background-color: brown;
+}
+article{
+    background-color: darkred;
+}
+/* Ubicacion o Layout */
+#panelProductos{
+    display: inline-block;
+    width: 65%;
+}
+#panelCarro{
+    display: inline-block;
+    width: 30%;
+}
+article{
+    display: inline-block;
+    width: 200px; 
+    border-radius: 10px;
+    padding: 10px;
+}
+/*  */
