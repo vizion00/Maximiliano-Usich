@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+}
+/* Colores */
+body {
+    background-color: whitesmoke;
+    color: black;
+}
+section {
+    background-color: purple;
+    color: white;
+}
+article {
+    background-color: cyan;
+    color: darkblue;
+}
+section, article{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Capas */
+body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+header, footer, h3, h4 {
+    grid-column: 1 / -1;
+}
+#panelProductos {
+    grid-column: 1 / -2;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+#panelCarrito{
+    grid-column: -2 / -1;
+    
+}
+
+
+img{
+    width: 150px;
+}
+
+
