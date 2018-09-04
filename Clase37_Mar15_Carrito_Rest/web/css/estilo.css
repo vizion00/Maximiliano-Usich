@@ -36,6 +36,7 @@ header, footer, nav, h2, h3 {
 article{
     border-radius: 10px;
     padding: 10px;
+    text-align: center;
 }
 img{
     width: 50%;
