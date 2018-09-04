@@ -7,5 +7,36 @@
 body{
     background-color: tan;
 }
+header, footer {
+    background-color: skyblue;
+}
+article{
+    background-color: aquamarine;
+}
+
 
 /* Maquetado o Layout o capas */
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+header, footer, nav, h2, h3 {
+    grid-column: 1 / -1;
+}
+#panelProductos {
+    grid-column: 1 / -2;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+#panelCarrito {
+    grid-column: -2 / -1;
+}
+article{
+    border-radius: 10px;
+    padding: 10px;
+}
+img{
+    width: 50%;
+}
