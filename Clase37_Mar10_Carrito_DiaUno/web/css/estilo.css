@@ -2,20 +2,31 @@
     margin: 0;
     padding: 0;
 }
+
 /* colores */
 body{
     background-color: darkgreen;
-    color: yellow;
-}
-section{
-    background-color: black;
+    color: black;
+    opacity: 0.9;
 }
 article{
-    background-color: darkolivegreen;
+    background-color: yellowgreen;
+    color: red;
     border-radius: 10px;
     padding: 10px;
 }
-
+header, footer, section{
+    background-color: lightgray;
+}
+/* imagenes */ 
+body{
+/*    background-image: url('../img/Palitos_de_mozzarella.jpg'), url('../img/Milanesa_comida.jpg') ; */
+    background-image: url('../img/Palitos_de_mozzarella.jpg') ; 
+/*    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/69/Mozzarella.jpg'); */
+/*    background-image:     linear-gradient(red, yellow, green); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /* layout o capas o maquetado */
 body{
     display: grid;
@@ -28,7 +39,8 @@ body{
 #panelProductos {
     grid-column: 1 / -2;
     display: inline-grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
     
 }
 #panelCarrito {
@@ -36,5 +48,29 @@ body{
 }
 
 img{
-    width: 50px;
+    width: 100px;
+}
+/*  Menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
 }
